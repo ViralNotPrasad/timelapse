@@ -13,9 +13,10 @@ REQUIREMENTS -
 FUTURE WORK -
 * Add a text slide or voice over on the video after capturing is done. (To mimic true journalling and analyes for later perusal)
 * Upload to YouTube/Google Drive at the push of a button
+* Streaming the footage live (slight deviation in when the video is stitched - not retrospectively but live)
 * Convert this to an app/web-app that can remotely trigger start/stop recorodings. 
 
 Any other ideas for this project will be appreciated, please feel free to email me at viralpasad[at]vt[dot]edu or shoot me a text at linkedIn.com/in/viralnotprasad.
 Happy journalling, stay healthy, stay home.
 
--Viral Not Prasad (2021)
+-Viral Pasad (2021)
