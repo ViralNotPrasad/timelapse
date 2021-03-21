@@ -23,9 +23,8 @@ def main():
 			stitch_video()
 			break
 		time.sleep(5) #no of seconds to wait for
-		img_name = "{}_frame{}.png".format(todayy, img_counter) #filename for img
+		img_name = "{}_frame{}.png".format(todayy, img_counter) #filename for image
 
-		# org = (325, 475) 
 		org = (0,30)
 		font = cv.FONT_HERSHEY_SIMPLEX 
 		fontt = 1
@@ -47,7 +46,7 @@ def stitch_video():
 	today = datetime.now()
 	todayy = today.strftime("%d_%b || %H:%M")
 	image_folder = '/home/viralnotprasad/Desktop/timelapse'
-	fps=12
+	fps=12 
 	image_files = [image_folder+'/'+img for img in sorted(os.listdir(image_folder),key=os.path.getmtime) if img.endswith(".png")]
 	print(type(image_files))
 	clip = moviepy.video.io.ImageSequenceClip.ImageSequenceClip(image_files, fps=fps)
@@ -57,6 +56,7 @@ def stitch_video():
 	for f in os.listdir(image_folder):
 		if f.endswith(".png"):
 			os.remove(os.path.join(image_folder, f))
+	os.rename('/home/viralnotprasad/Desktop/timelapse','/home/viralnotprasad/Desktop/timelapse/images')
 
 if __name__ == "__main__":
 	main()
